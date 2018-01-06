@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  FoodTracker
 //
-//  Created by Elisha Lye on 1/6/18.
+//  Created by Elye Proj on 1/6/18.
 //  Copyright © 2018 Elye Proj. All rights reserved.
 //
 
