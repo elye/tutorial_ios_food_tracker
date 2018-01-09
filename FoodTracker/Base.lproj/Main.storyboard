@@ -41,7 +41,7 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQP-Ij-6Gd"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="bjC-xO-0XZ">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="bjC-xO-0XZ">
                                         <rect key="frame" x="0.0" y="104.5" width="343" height="343"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="bjC-xO-0XZ" secondAttribute="height" multiplier="1:1" id="cQ0-Oy-vCj"/>
