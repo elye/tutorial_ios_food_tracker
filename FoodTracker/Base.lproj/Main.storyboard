@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Meal Table View Controller-->
         <scene sceneID="aZM-3M-9FD">
             <objects>
-                <tableViewController id="GGG-xE-hpI" sceneMemberID="viewController">
+                <tableViewController id="GGG-xE-hpI" customClass="MealTableViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gc4-FJ-0sV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,11 @@
                                         </stackView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="g98-BG-FqG" id="ant-n7-qH2"/>
+                                    <outlet property="photoImageView" destination="7e4-KH-Fe9" id="NLd-FH-CEO"/>
+                                    <outlet property="ratingControl" destination="9WM-Rz-3wL" id="GbC-0D-VbZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
