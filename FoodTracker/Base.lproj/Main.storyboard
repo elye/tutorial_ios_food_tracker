@@ -76,8 +76,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0UK-8V-vtN">
-                                <rect key="frame" x="16" y="80" width="343" height="433"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0UK-8V-vtN">
+                                <rect key="frame" x="16" y="80" width="343" height="439"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2LS-Vw-AWf">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -95,8 +95,8 @@
                                             <outletCollection property="gestureRecognizers" destination="Mgf-Md-1yg" appends="YES" id="SVu-uH-6FU"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-qG-xMc" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="45.5" y="389" width="252" height="44"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-qG-xMc" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="45.5" y="389" width="252" height="50"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -113,7 +113,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="5qQ-R3-9Tj">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="auT-YS-8vR"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="auT-YS-8vR">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="MH8-3F-ffN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Rsf-Gb-2V5">
                             <connections>
                                 <segue destination="IXb-vm-KjD" kind="unwind" unwindAction="unwindToMealListWithSender:" id="ocI-Yv-xD5"/>
